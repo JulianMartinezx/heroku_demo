@@ -1,0 +1,131 @@
+/* Clase 12: Micro desafios Paso 1
+
+Nuestro desafío es aplicarle los estilos que nos envía el departamento de diseño a cada
+sección del Header del sitio (navbar, login bar y al search bar). Recordemos que por el
+momento estamos trabajando mobile first. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+header {
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+}
+
+p,
+li {
+    font-size: 12px;
+}
+
+.ofertas h2 {
+    font-size: 24px;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+}
+
+.search-btn {
+    background-color: #ebebeb;
+    border: solid 1px #666;
+    border-radius: 2px;
+}
+
+.burger-menu {
+    position: relative;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color: white;
+    background-color: #1259c3;
+    border-width: 0px;
+    border-radius: 5px;
+    font-size: 2em;
+    margin-bottom: 1em;
+    padding: 5px;
+}
+
+main {
+    background-color: lightgray;
+}
+
+main * {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner>img {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ofertas * {
+    width: 90vw;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ofertas>h2 {
+    padding: 10px;
+    text-align: center;
+}
+
+.ofertas>div {
+    margin: 10px;
+}
+
+.productos>ul {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white;
+}
+
+.productos>ul>li {
+    padding: 0;
+}
+
+.productos>img {
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+}
+
+footer section i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+@media (max-width: 360px) {
+    .ofertas>.productos>ul,
+    header>nav {
+        display: none;
+    }
+}
+
+@media (min-width: 361px) {
+    .menu {
+        display: none;
+    }
+    .productos {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width: 769px) {}
